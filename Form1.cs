@@ -72,33 +72,6 @@ namespace Configurator
                 load_list_saves();
                 //               load_leng();
 
-                #region About
-                try
-                {
-                    about_mod.LoadFile("localization//" + lang + "//ogse_about_mod.rtf", RichTextBoxStreamType.RichText);
-                }
-                catch
-                {
-                    about_mod.Text = res.GetString("CANT_FIND_FILE") + " ogse_about_mod.rtf";
-                }
-                try
-                {
-                    team.LoadFile("localization//" + lang + "//ogse_about.rtf", RichTextBoxStreamType.RichText);
-                }
-                catch
-                {
-                    team.Text = res.GetString("CANT_FIND_FILE") + " ogse_about.rtf";
-                }
-                try
-                {
-                    features.LoadFile("localization//" + lang + "//ogse_features.rtf", RichTextBoxStreamType.RichText);
-                }
-                catch
-                {
-                    features.Text = res.GetString("CANT_FIND_FILE") + " ogse_features.rtf";
-                }
-                #endregion
-
                 var cfg = new OgseConfig();
                 OgseConfigSerializer.Instance.Load(cfg);
                 this.propertyGrid1.SelectedObject = cfg;
@@ -754,12 +727,6 @@ namespace Configurator
 
         private void tabpage_Selected(object sender, TabControlEventArgs e)
         {
-            if (e.TabPage == tabPage11)
-                team.Select();
-            else if (e.TabPage == tabPage10)
-                about_mod.Select();
-            else if (e.TabPage == tabPage1)
-                features.Select();
         }
 
         private void ChangeLocale(E_LANG _l)

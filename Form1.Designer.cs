@@ -68,12 +68,7 @@
             this.pictureBox_day = new System.Windows.Forms.PictureBox();
             this.folderBrowserDialog1 = new System.Windows.Forms.FolderBrowserDialog();
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
-            this.tabPage11 = new System.Windows.Forms.TabPage();
-            this.team = new System.Windows.Forms.RichTextBox();
-            this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.features = new System.Windows.Forms.RichTextBox();
-            this.tabPage10 = new System.Windows.Forms.TabPage();
-            this.about_mod = new System.Windows.Forms.RichTextBox();
+            this.StartGameButton64 = new System.Windows.Forms.Button();
             this.tabPage12 = new System.Windows.Forms.TabPage();
             this.savePicture = new System.Windows.Forms.PictureBox();
             this.SavesList = new System.Windows.Forms.ListView();
@@ -85,7 +80,6 @@
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.propertyGrid1 = new System.Windows.Forms.PropertyGrid();
             this.tabpage = new System.Windows.Forms.TabControl();
-            this.StartGameButton64 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.lang_pic_fr)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lang_pic_en)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lang_pic_ru)).BeginInit();
@@ -94,9 +88,6 @@
             this.tabPage8.SuspendLayout();
             this.tabPage9.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_day)).BeginInit();
-            this.tabPage11.SuspendLayout();
-            this.tabPage1.SuspendLayout();
-            this.tabPage10.SuspendLayout();
             this.tabPage12.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.savePicture)).BeginInit();
             this.tabPage5.SuspendLayout();
@@ -359,44 +350,12 @@
             this.saveFileDialog1.AddExtension = false;
             resources.ApplyResources(this.saveFileDialog1, "saveFileDialog1");
             // 
-            // tabPage11
+            // StartGameButton64
             // 
-            this.tabPage11.Controls.Add(this.team);
-            resources.ApplyResources(this.tabPage11, "tabPage11");
-            this.tabPage11.Name = "tabPage11";
-            this.tabPage11.UseVisualStyleBackColor = true;
-            // 
-            // team
-            // 
-            resources.ApplyResources(this.team, "team");
-            this.team.Name = "team";
-            this.team.ReadOnly = true;
-            // 
-            // tabPage1
-            // 
-            this.tabPage1.Controls.Add(this.features);
-            resources.ApplyResources(this.tabPage1, "tabPage1");
-            this.tabPage1.Name = "tabPage1";
-            this.tabPage1.UseVisualStyleBackColor = true;
-            // 
-            // features
-            // 
-            resources.ApplyResources(this.features, "features");
-            this.features.Name = "features";
-            this.features.ReadOnly = true;
-            // 
-            // tabPage10
-            // 
-            this.tabPage10.Controls.Add(this.about_mod);
-            resources.ApplyResources(this.tabPage10, "tabPage10");
-            this.tabPage10.Name = "tabPage10";
-            this.tabPage10.UseVisualStyleBackColor = true;
-            // 
-            // about_mod
-            // 
-            resources.ApplyResources(this.about_mod, "about_mod");
-            this.about_mod.Name = "about_mod";
-            this.about_mod.ReadOnly = true;
+            resources.ApplyResources(this.StartGameButton64, "StartGameButton64");
+            this.StartGameButton64.Name = "StartGameButton64";
+            this.StartGameButton64.UseVisualStyleBackColor = true;
+            this.StartGameButton64.Click += new System.EventHandler(this.StartGameClick64);
             // 
             // tabPage12
             // 
@@ -481,19 +440,9 @@
             this.tabpage.Controls.Add(this.tabPage2);
             this.tabpage.Controls.Add(this.tabPage5);
             this.tabpage.Controls.Add(this.tabPage12);
-            this.tabpage.Controls.Add(this.tabPage10);
-            this.tabpage.Controls.Add(this.tabPage1);
-            this.tabpage.Controls.Add(this.tabPage11);
             this.tabpage.Name = "tabpage";
             this.tabpage.SelectedIndex = 0;
             this.tabpage.Selected += new System.Windows.Forms.TabControlEventHandler(this.tabpage_Selected);
-            // 
-            // StartGameButton64
-            // 
-            resources.ApplyResources(this.StartGameButton64, "StartGameButton64");
-            this.StartGameButton64.Name = "StartGameButton64";
-            this.StartGameButton64.UseVisualStyleBackColor = true;
-            this.StartGameButton64.Click += new System.EventHandler(this.StartGameClick64);
             // 
             // Form1
             // 
@@ -526,9 +475,6 @@
             this.tabPage9.ResumeLayout(false);
             this.tabPage9.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_day)).EndInit();
-            this.tabPage11.ResumeLayout(false);
-            this.tabPage1.ResumeLayout(false);
-            this.tabPage10.ResumeLayout(false);
             this.tabPage12.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.savePicture)).EndInit();
             this.tabPage5.ResumeLayout(false);
@@ -578,13 +524,9 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.SaveFileDialog saveFileDialog1;
-        private System.Windows.Forms.TabPage tabPage11;
-        private System.Windows.Forms.RichTextBox team;
-        private System.Windows.Forms.TabPage tabPage1;
-        private System.Windows.Forms.RichTextBox features;
-        private System.Windows.Forms.TabPage tabPage10;
-        private System.Windows.Forms.RichTextBox about_mod;
+        private System.Windows.Forms.Button StartGameButton64;
         private System.Windows.Forms.TabPage tabPage12;
+        private System.Windows.Forms.Button button4;
         private System.Windows.Forms.PictureBox savePicture;
         private System.Windows.Forms.ListView SavesList;
         private System.Windows.Forms.ColumnHeader columnHeader1;
@@ -595,8 +537,6 @@
         private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.PropertyGrid propertyGrid1;
         private System.Windows.Forms.TabControl tabpage;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button StartGameButton64;
     }
 }
 
