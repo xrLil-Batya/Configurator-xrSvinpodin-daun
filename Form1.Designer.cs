@@ -33,7 +33,6 @@
             this.OgseLink = new System.Windows.Forms.LinkLabel();
             this.ApplyButton = new System.Windows.Forms.Button();
             this.CloseButton = new System.Windows.Forms.Button();
-            this.StartGameButton = new System.Windows.Forms.Button();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.Nickname = new System.Windows.Forms.Label();
             this.name = new System.Windows.Forms.RichTextBox();
@@ -115,13 +114,6 @@
             this.CloseButton.Name = "CloseButton";
             this.CloseButton.UseVisualStyleBackColor = true;
             this.CloseButton.Click += new System.EventHandler(this.ExitButtonClick);
-            // 
-            // StartGameButton
-            // 
-            resources.ApplyResources(this.StartGameButton, "StartGameButton");
-            this.StartGameButton.Name = "StartGameButton";
-            this.StartGameButton.UseVisualStyleBackColor = true;
-            this.StartGameButton.Click += new System.EventHandler(this.StartGameClick);
             // 
             // toolTip1
             // 
@@ -456,7 +448,6 @@
             this.Controls.Add(this.lang_pic_en);
             this.Controls.Add(this.lang_pic_ru);
             this.Controls.Add(this.pictureBox_day);
-            this.Controls.Add(this.StartGameButton);
             this.Controls.Add(this.CloseButton);
             this.Controls.Add(this.ApplyButton);
             this.Controls.Add(this.OgseLink);
@@ -490,7 +481,6 @@
         private System.Windows.Forms.LinkLabel OgseLink;
         private System.Windows.Forms.Button ApplyButton;
         private System.Windows.Forms.Button CloseButton;
-        private System.Windows.Forms.Button StartGameButton;
         private System.Windows.Forms.PictureBox pictureBox_day;
         private System.Windows.Forms.ToolTip toolTip1;
         private System.Windows.Forms.FolderBrowserDialog folderBrowserDialog1;

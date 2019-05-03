@@ -72,6 +72,11 @@ namespace Configurator
 			}
 		}
 
+        [GlobalizedProperty("dinamicheski_hud_name", Description = "dinamicheski_hud_desc", Category = "player")]
+        [TypeConverter(typeof(BooleanTypeConverter))]
+        [DefaultValue(false)]
+        public bool dinamicheski_hud { get; set; }
+
         [GlobalizedProperty("pnv_disabling_name", Description = "pnv_disabling_desc", Category = "player")]
         [TypeConverter(typeof(BooleanTypeConverter))]
         [DefaultValue(false)]
@@ -368,7 +373,8 @@ namespace Configurator
 				cfg.otobr_soderj_tajnikov = SetCheckboxValueFromIni("options", "treasure_need_text");
 				cfg.dinamic_news = SetCheckboxValueFromIni("options", "random_news");
 				cfg.dop_spawn = SetCheckboxValueFromIni("options", "additional_spawn");
-				cfg.plohoe_samochustv = SetCheckboxValueFromIni("options", "bleed_enable");
+                cfg.dinamicheski_hud = SetCheckboxValueFromIni("options", "suithud_enable");
+                cfg.plohoe_samochustv = SetCheckboxValueFromIni("options", "bleed_enable");
                // cfg.ammo_on_belt = SetCheckboxValueFromIni("options", "ammunition_on_belt");
                 cfg.poboch_lek = SetCheckboxValueFromIni("options", "poison_drugs");
 				cfg.medlen_lek = SetCheckboxValueFromIni("options", "slow_drugs");
@@ -457,8 +463,9 @@ namespace Configurator
 			WriteCheckboxValueToIni(cfg.medlen_lek, "options", "slow_drugs");
             WriteBoolValueToIni(cfg.pnv_disabling, "wpn_addon_setup", "cheat_nv_block");
             WriteBoolValueToIni(cfg.pnv_autostart, "wpn_addon_setup", "cheat_nv_scope_autoenable");
+            WriteBoolValueToIni(cfg.dinamicheski_hud, "options", "suithud_enable");
 
-			string value = "0";
+            string value = "0";
             if (cfg.weather_type == E_WEATHER.Bright)
                 value = "1";
             else if (cfg.weather_type == E_WEATHER.Rainy)
