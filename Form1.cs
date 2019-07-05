@@ -78,8 +78,7 @@ namespace Configurator
                 this.propertyGrid1.HelpVisible = true;
                 var cfg2 = new OgseGraphics();
                 OgseGraphicsSerializer.Instance.Load(Data.ShaderConfigPath, cfg2);
-                this.propertyGrid2.SelectedObject = cfg2;
-                string tmp = new string('\r', 29);
+                 string tmp = new string('\r', 29);
                 Utils.INI.GetPrivateProfileString("mod_ver", "mod_ver", "", tmp, 30, Data.VersionPath);
                 // test
                 string test_for_morons = new string('\r', 29);
@@ -361,7 +360,6 @@ namespace Configurator
         {
             save_other();
             OgseConfigSerializer.Instance.Save(propertyGrid1.SelectedObject as OgseConfig);
-            OgseGraphicsSerializer.Instance.Save(propertyGrid2.SelectedObject as OgseGraphics);
         }
 
         private void reload_string()
@@ -595,7 +593,6 @@ namespace Configurator
                 RestorePos();
             }
             RestoreGridSplitterPos(this.propertyGrid1, Properties.Settings.Default.GridSplitterPos, Properties.Settings.Default.GridCommentHeight);
-            RestoreGridSplitterPos(this.propertyGrid2, Properties.Settings.Default.GridSplitterPos2, Properties.Settings.Default.GridCommentHeight2);
         }
 
         private void Form1_FormClosing(object sender, FormClosingEventArgs e)
@@ -605,7 +602,6 @@ namespace Configurator
             SaveGridSplitterPos(this.propertyGrid1, out pos, out height);
             Properties.Settings.Default.GridSplitterPos = pos;
             Properties.Settings.Default.GridCommentHeight = height;
-            SaveGridSplitterPos(this.propertyGrid2, out pos, out height);
             Properties.Settings.Default.GridSplitterPos2 = pos;
             Properties.Settings.Default.GridCommentHeight2 = height;
             Properties.Settings.Default.Inited = true;

@@ -73,9 +73,6 @@
             this.SavesList = new System.Windows.Forms.ListView();
             this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.tabPage5 = new System.Windows.Forms.TabPage();
-            this.propertyGrid2 = new System.Windows.Forms.PropertyGrid();
-            this.richTextBox2 = new System.Windows.Forms.RichTextBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.propertyGrid1 = new System.Windows.Forms.PropertyGrid();
             this.tabpage = new System.Windows.Forms.TabControl();
@@ -89,7 +86,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_day)).BeginInit();
             this.tabPage12.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.savePicture)).BeginInit();
-            this.tabPage5.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.tabpage.SuspendLayout();
             this.SuspendLayout();
@@ -389,28 +385,6 @@
             // 
             resources.ApplyResources(this.columnHeader2, "columnHeader2");
             // 
-            // tabPage5
-            // 
-            this.tabPage5.Controls.Add(this.propertyGrid2);
-            this.tabPage5.Controls.Add(this.richTextBox2);
-            resources.ApplyResources(this.tabPage5, "tabPage5");
-            this.tabPage5.Name = "tabPage5";
-            this.tabPage5.UseVisualStyleBackColor = true;
-            // 
-            // propertyGrid2
-            // 
-            resources.ApplyResources(this.propertyGrid2, "propertyGrid2");
-            this.propertyGrid2.Name = "propertyGrid2";
-            this.propertyGrid2.PropertySort = System.Windows.Forms.PropertySort.Categorized;
-            this.propertyGrid2.ToolbarVisible = false;
-            this.propertyGrid2.PropertyValueChanged += new System.Windows.Forms.PropertyValueChangedEventHandler(this.propertyGrid2_PropertyValueChanged);
-            // 
-            // richTextBox2
-            // 
-            resources.ApplyResources(this.richTextBox2, "richTextBox2");
-            this.richTextBox2.Name = "richTextBox2";
-            this.richTextBox2.ReadOnly = true;
-            // 
             // tabPage2
             // 
             this.tabPage2.Controls.Add(this.propertyGrid1);
@@ -430,7 +404,6 @@
             // 
             resources.ApplyResources(this.tabpage, "tabpage");
             this.tabpage.Controls.Add(this.tabPage2);
-            this.tabpage.Controls.Add(this.tabPage5);
             this.tabpage.Controls.Add(this.tabPage12);
             this.tabpage.Name = "tabpage";
             this.tabpage.SelectedIndex = 0;
@@ -468,7 +441,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_day)).EndInit();
             this.tabPage12.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.savePicture)).EndInit();
-            this.tabPage5.ResumeLayout(false);
             this.tabPage2.ResumeLayout(false);
             this.tabpage.ResumeLayout(false);
             this.ResumeLayout(false);
@@ -521,9 +493,6 @@
         private System.Windows.Forms.ListView SavesList;
         private System.Windows.Forms.ColumnHeader columnHeader1;
         private System.Windows.Forms.ColumnHeader columnHeader2;
-        private System.Windows.Forms.TabPage tabPage5;
-        private System.Windows.Forms.PropertyGrid propertyGrid2;
-        private System.Windows.Forms.RichTextBox richTextBox2;
         private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.PropertyGrid propertyGrid1;
         private System.Windows.Forms.TabControl tabpage;
