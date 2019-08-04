@@ -306,7 +306,7 @@ namespace Configurator
             SaveAndStartGame("x64");
         }
 
-        private void SaveAndStartGame(string platform)
+        private void SaveAndStartGame(string platform = "x64")
         {
             try
             {
@@ -336,7 +336,7 @@ namespace Configurator
         //по двойному клику по сейву запускаем игру
         private void SavesListDoubleClick(object sender, EventArgs e)
         {
-            //SaveAndStartGame(); KRodin: выключаю, т.к. теперь надо выбрать, движок какой разрядности запускать.
+            SaveAndStartGame();
         }
 
         #endregion
