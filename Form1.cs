@@ -76,8 +76,6 @@ namespace Configurator
                 OgseConfigSerializer.Instance.Load(cfg);
                 this.propertyGrid1.SelectedObject = cfg;
                 this.propertyGrid1.HelpVisible = true;
-                var cfg2 = new OgseGraphics();
-                OgseGraphicsSerializer.Instance.Load(Data.ShaderConfigPath, cfg2);
                  string tmp = new string('\r', 29);
                 Utils.INI.GetPrivateProfileString("mod_ver", "mod_ver", "", tmp, 30, Data.VersionPath);
                 // test
@@ -203,7 +201,7 @@ namespace Configurator
                 string[] k1 = launchParamsList[1].Split('=');
                 lang = k1[1];
             }
-            catch (Exception e)
+            catch (Exception /*e*/)
             {
                 //MessageBox.Show(e.Message);
                 //return;
@@ -226,7 +224,7 @@ namespace Configurator
                 string[] k1 = launchParamsList[1].Split('=');
                 lang = k1[1];
             }
-            catch (Exception e)
+            catch (Exception /*e*/)
             {
                 //MessageBox.Show(e.Message);
                 //return;
@@ -718,7 +716,6 @@ namespace Configurator
         private void propertyGrid2_PropertyValueChanged(object s, PropertyValueChangedEventArgs e)
         {
             ApplyButton.Enabled = true;
-            OgseGraphicsSerializer.Instance.need_to_rewrite = true;
         }
 
         private void tabpage_Selected(object sender, TabControlEventArgs e)
