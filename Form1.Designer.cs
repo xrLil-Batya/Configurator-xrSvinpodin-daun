@@ -370,6 +370,7 @@
             this.SavesList.FullRowSelect = true;
             this.SavesList.GridLines = true;
             this.SavesList.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.None;
+            this.SavesList.HideSelection = false;
             this.SavesList.MultiSelect = false;
             this.SavesList.Name = "SavesList";
             this.SavesList.UseCompatibleStateImageBehavior = false;

@@ -133,7 +133,7 @@
     <value>NoControl</value>
   </data>
   <data name="OgseLink.Location" type="System.Drawing.Point, System.Drawing">
-    <value>11, 606</value>
+    <value>11, 656</value>
   </data>
   <data name="OgseLink.Size" type="System.Drawing.Size, System.Drawing">
     <value>142, 15</value>
@@ -169,7 +169,7 @@
     <value>NoControl</value>
   </data>
   <data name="ApplyButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>308, 602</value>
+    <value>308, 652</value>
   </data>
   <data name="ApplyButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>139, 26</value>
@@ -202,7 +202,7 @@
     <value>NoControl</value>
   </data>
   <data name="CloseButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>453, 602</value>
+    <value>453, 652</value>
   </data>
   <data name="CloseButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>147, 26</value>
@@ -379,7 +379,7 @@
     <value>NoControl</value>
   </data>
   <data name="button4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>464, 401</value>
+    <value>467, 454</value>
   </data>
   <data name="button4.Size" type="System.Drawing.Size, System.Drawing">
     <value>126, 42</value>
@@ -1114,7 +1114,7 @@
     <value>NoControl</value>
   </data>
   <data name="StartGameButton64.Location" type="System.Drawing.Point, System.Drawing">
-    <value>153, 602</value>
+    <value>153, 652</value>
   </data>
   <data name="StartGameButton64.Size" type="System.Drawing.Size, System.Drawing">
     <value>149, 26</value>
@@ -1183,7 +1183,7 @@
     <value>0, 3</value>
   </data>
   <data name="SavesList.Size" type="System.Drawing.Size, System.Drawing">
-    <value>351, 446</value>
+    <value>351, 493</value>
   </data>
   <data name="SavesList.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -1207,7 +1207,7 @@
     <value>3, 3, 3, 3</value>
   </data>
   <data name="tabPage12.Size" type="System.Drawing.Size, System.Drawing">
-    <value>593, 449</value>
+    <value>593, 499</value>
   </data>
   <data name="tabPage12.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
@@ -1234,7 +1234,7 @@
     <value>0, 0</value>
   </data>
   <data name="propertyGrid1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>593, 449</value>
+    <value>593, 499</value>
   </data>
   <data name="propertyGrid1.TabIndex" type="System.Int32, mscorlib">
     <value>20</value>
@@ -1255,7 +1255,7 @@
     <value>4, 24</value>
   </data>
   <data name="tabPage2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>593, 449</value>
+    <value>593, 499</value>
   </data>
   <data name="tabPage2.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
@@ -1285,7 +1285,7 @@
     <value>6, 119</value>
   </data>
   <data name="tabpage.Size" type="System.Drawing.Size, System.Drawing">
-    <value>601, 477</value>
+    <value>601, 527</value>
   </data>
   <data name="tabpage.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -1318,7 +1318,7 @@
     <value>GrowAndShrink</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>610, 634</value>
+    <value>610, 684</value>
   </data>
   <data name="$this.MaximumSize" type="System.Drawing.Size, System.Drawing">
     <value>626, 9998</value>
