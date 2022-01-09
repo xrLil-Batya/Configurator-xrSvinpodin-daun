@@ -132,12 +132,6 @@
   <data name="chaes_timer_name" xml:space="preserve">
     <value>Compte-à-rebours de la centrale, min</value>
   </data>
-  <data name="dinamicheski_hud_desc" xml:space="preserve">
-    <value>Cette option gère les textures dynamiques à l'écran - le masque à gaz ou le casque de la combinaison est visible, ainsi que la condensation dynamique, le sang et les égratinures.</value>
-  </data>
-  <data name="dinamicheski_hud_name" xml:space="preserve">
-    <value>Hud dynamique</value>
-  </data>
   <data name="dop_spawn_desc" xml:space="preserve">
     <value>Cette option gère l'apparition périodique de stalkers et de monstres en des lieux aléatoires. Cela peut changer complètement le jeu et rendre certaines situations imprévisibles.</value>
   </data>
@@ -203,18 +197,6 @@
   </data>
   <data name="plohoe_samochustv_name" xml:space="preserve">
     <value>Effets sur la santé</value>
-  </data>
-  <data name="pnv_autostart_desc" xml:space="preserve">
-    <value>Activation automatique de la vision nocturne sur les lunettes de visée</value>
-  </data>
-  <data name="pnv_autostart_name" xml:space="preserve">
-    <value>Vision nocturne des lunettes</value>
-  </data>
-  <data name="pnv_disabling_desc" xml:space="preserve">
-    <value>Cette option désactive la vision nocturne lors du zoom avec une lunette ou des jumelles. Les jumelles et lunettes nocturnes ne sont pas affectées.</value>
-  </data>
-  <data name="pnv_disabling_name" xml:space="preserve">
-    <value>Vision nocturne désactivée lors du zoom</value>
   </data>
   <data name="poboch_lek_desc" xml:space="preserve">
     <value>Cette option gère les effets secondaires en cas d'overdose</value>
@@ -302,12 +284,6 @@
   </data>
   <data name="world_settings" xml:space="preserve">
     <value>Zone</value>
-  </data>
-  <data name="zalyap_hud_desc" xml:space="preserve">
-    <value>Cette option active les giclures de sang sur le masque quand un PNJ est très près du joueur</value>
-  </data>
-  <data name="zalyap_hud_name" xml:space="preserve">
-    <value>Sang sur le masque</value>
   </data>
   <data name="NPC" xml:space="preserve">
     <value>PNJ</value>

@@ -72,21 +72,6 @@ namespace Configurator
 			}
 		}
 
-        [GlobalizedProperty("dinamicheski_hud_name", Description = "dinamicheski_hud_desc", Category = "player")]
-        [TypeConverter(typeof(BooleanTypeConverter))]
-        [DefaultValue(false)]
-        public bool dinamicheski_hud { get; set; }
-
-        [GlobalizedProperty("pnv_disabling_name", Description = "pnv_disabling_desc", Category = "player")]
-        [TypeConverter(typeof(BooleanTypeConverter))]
-        [DefaultValue(false)]
-        public bool pnv_disabling { get; set; }
-
-        [GlobalizedProperty("pnv_autostart_name", Description = "pnv_autostart_desc", Category = "player")]
-        [TypeConverter(typeof(BooleanTypeConverter))]
-        [DefaultValue(false)]
-        public bool pnv_autostart { get; set; }
-
         [GlobalizedProperty("poboch_lek_name", Description = "poboch_lek_desc", Category = "player")]
 		[TypeConverter(typeof(BooleanTypeConverter))]
 		[DefaultValue(false)]
@@ -373,14 +358,11 @@ namespace Configurator
 				cfg.otobr_soderj_tajnikov = SetCheckboxValueFromIni("options", "treasure_need_text");
 				cfg.dinamic_news = SetCheckboxValueFromIni("options", "random_news");
 				cfg.dop_spawn = SetCheckboxValueFromIni("options", "additional_spawn");
-                cfg.dinamicheski_hud = SetCheckboxValueFromIni("options", "suithud_enable");
-                cfg.plohoe_samochustv = SetCheckboxValueFromIni("options", "bleed_enable");
+               cfg.plohoe_samochustv = SetCheckboxValueFromIni("options", "bleed_enable");
                // cfg.ammo_on_belt = SetCheckboxValueFromIni("options", "ammunition_on_belt");
                 cfg.poboch_lek = SetCheckboxValueFromIni("options", "poison_drugs");
 				cfg.medlen_lek = SetCheckboxValueFromIni("options", "slow_drugs");
-                cfg.pnv_disabling = SetCheckboxValueFromIni("wpn_addon_setup", "cheat_nv_block");
-                cfg.pnv_autostart = SetCheckboxValueFromIni("wpn_addon_setup", "cheat_nv_scope_autoenable");
-				#endregion
+ 				#endregion
 
 				int value = GetIntValueFromIni("options", "weather_type");
                 switch (value)
@@ -461,9 +443,6 @@ namespace Configurator
           //  WriteCheckboxValueToIni(cfg.ammo_on_belt, "options", "ammunition_on_belt");
             WriteCheckboxValueToIni(cfg.poboch_lek, "options", "poison_drugs");
 			WriteCheckboxValueToIni(cfg.medlen_lek, "options", "slow_drugs");
-            WriteBoolValueToIni(cfg.pnv_disabling, "wpn_addon_setup", "cheat_nv_block");
-            WriteBoolValueToIni(cfg.pnv_autostart, "wpn_addon_setup", "cheat_nv_scope_autoenable");
-            WriteBoolValueToIni(cfg.dinamicheski_hud, "options", "suithud_enable");
 
             string value = "0";
             if (cfg.weather_type == E_WEATHER.Bright)

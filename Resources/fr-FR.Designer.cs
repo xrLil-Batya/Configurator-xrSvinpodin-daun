@@ -19,7 +19,7 @@ namespace Configurator.Resources {
     // с помощью такого средства, как ResGen или Visual Studio.
     // Чтобы добавить или удалить член, измените файл .ResX и снова запустите ResGen
     // с параметром /str или перестройте свой проект VS.
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "4.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "17.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     internal class fr_FR {
@@ -174,24 +174,6 @@ namespace Configurator.Resources {
         internal static string ddof_gain_name {
             get {
                 return ResourceManager.GetString("ddof_gain_name", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Ищет локализованную строку, похожую на Cette option gère les textures dynamiques à l&apos;écran - le masque à gaz ou le casque de la combinaison est visible, ainsi que la condensation dynamique, le sang et les égratinures..
-        /// </summary>
-        internal static string dinamicheski_hud_desc {
-            get {
-                return ResourceManager.GetString("dinamicheski_hud_desc", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Ищет локализованную строку, похожую на Hud dynamique.
-        /// </summary>
-        internal static string dinamicheski_hud_name {
-            get {
-                return ResourceManager.GetString("dinamicheski_hud_name", resourceCulture);
             }
         }
         
@@ -543,42 +525,6 @@ namespace Configurator.Resources {
         internal static string plohoe_samochustv_name {
             get {
                 return ResourceManager.GetString("plohoe_samochustv_name", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Ищет локализованную строку, похожую на Activation automatique de la vision nocturne sur les lunettes de visée.
-        /// </summary>
-        internal static string pnv_autostart_desc {
-            get {
-                return ResourceManager.GetString("pnv_autostart_desc", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Ищет локализованную строку, похожую на Vision nocturne des lunettes.
-        /// </summary>
-        internal static string pnv_autostart_name {
-            get {
-                return ResourceManager.GetString("pnv_autostart_name", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Ищет локализованную строку, похожую на Cette option désactive la vision nocturne lors du zoom avec une lunette ou des jumelles. Les jumelles et lunettes nocturnes ne sont pas affectées..
-        /// </summary>
-        internal static string pnv_disabling_desc {
-            get {
-                return ResourceManager.GetString("pnv_disabling_desc", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Ищет локализованную строку, похожую на Vision nocturne désactivée lors du zoom.
-        /// </summary>
-        internal static string pnv_disabling_name {
-            get {
-                return ResourceManager.GetString("pnv_disabling_name", resourceCulture);
             }
         }
         
@@ -1101,24 +1047,6 @@ namespace Configurator.Resources {
         internal static string world_settings {
             get {
                 return ResourceManager.GetString("world_settings", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Ищет локализованную строку, похожую на Cette option active les giclures de sang sur le masque quand un PNJ est très près du joueur.
-        /// </summary>
-        internal static string zalyap_hud_desc {
-            get {
-                return ResourceManager.GetString("zalyap_hud_desc", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Ищет локализованную строку, похожую на Sang sur le masque.
-        /// </summary>
-        internal static string zalyap_hud_name {
-            get {
-                return ResourceManager.GetString("zalyap_hud_name", resourceCulture);
             }
         }
         

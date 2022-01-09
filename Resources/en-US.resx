@@ -156,12 +156,6 @@
   <data name="ddof_gain_name" xml:space="preserve">
     <value>DDOF gain</value>
   </data>
-  <data name="dinamicheski_hud_desc" xml:space="preserve">
-    <value>This option toggles visibility of the gas mask or the outfit mask and also shows the dynamic effects such as blood stains and glass fractures depending on the condition of the mask.</value>
-  </data>
-  <data name="dinamicheski_hud_name" xml:space="preserve">
-    <value>Dynamic hud</value>
-  </data>
   <data name="dof" xml:space="preserve">
     <value>Depth of field</value>
   </data>
@@ -278,18 +272,6 @@
   </data>
   <data name="plohoe_samochustv_name" xml:space="preserve">
     <value>«Feeling bad» effects</value>
-  </data>
-  <data name="pnv_autostart_desc" xml:space="preserve">
-    <value>Automatic use of scope's built-in night vision function.</value>
-  </data>
-  <data name="pnv_autostart_name" xml:space="preserve">
-    <value>NVD: autostart with scope</value>
-  </data>
-  <data name="pnv_disabling_desc" xml:space="preserve">
-    <value>This option controls disabling night vision while aiming through certain scopes or when using binoculars. Does not affect night vision binoculars and scopes.</value>
-  </data>
-  <data name="pnv_disabling_name" xml:space="preserve">
-    <value>NVD: disable while aiming</value>
   </data>
   <data name="poboch_lek_desc" xml:space="preserve">
     <value>This option controls side effects of drugs in case of overdose.</value>
@@ -464,12 +446,6 @@
   </data>
   <data name="world_settings" xml:space="preserve">
     <value>World</value>
-  </data>
-  <data name="zalyap_hud_desc" xml:space="preserve">
-    <value>This option enables blood stains on the equipped mask when shooting somebody at close range.</value>
-  </data>
-  <data name="zalyap_hud_name" xml:space="preserve">
-    <value>Blood on masks</value>
   </data>
   <data name="zdof_int_desc" xml:space="preserve">
     <value>Intensity of Depth Of Field effect when zooming in. Can be changed from 0 to 100.</value>

@@ -132,12 +132,6 @@
   <data name="chaes_timer_name" xml:space="preserve">
     <value>Таймер выброса на ЧАЭС, мин</value>
   </data>
-  <data name="dinamicheski_hud_desc" xml:space="preserve">
-    <value>Эта опция включает отображение противогаза или маски костюма, что включает также эффекты запотевания стёкол от дыхания и, в зависимости от состояния, трещины, пятна крови и царапины на стекле.</value>
-  </data>
-  <data name="dinamicheski_hud_name" xml:space="preserve">
-    <value>Динамический худ</value>
-  </data>
   <data name="dop_spawn_desc" xml:space="preserve">
     <value>Эта опция определяет, будут ли в игре периодически спавниться дополнительные враги и монстры в произвольных местах. Опция серьёзно оживляет игру, однако увеличивает нагрузку на систему, и может сделать прохождение квестовых сценок непредсказуемым.</value>
   </data>
@@ -285,26 +279,8 @@
   <data name="world_settings" xml:space="preserve">
     <value>Окружающий мир</value>
   </data>
-  <data name="zalyap_hud_desc" xml:space="preserve">
-    <value>Эта опция включает забрызгивание стекла маски кровью при убийстве НПС в упор.</value>
-  </data>
-  <data name="zalyap_hud_name" xml:space="preserve">
-    <value>Брызги крови на маске</value>
-  </data>
   <data name="eng" xml:space="preserve">
     <value>Английский</value>
-  </data>
-  <data name="pnv_autostart_desc" xml:space="preserve">
-    <value>Автоматическое включение ПНВ при прицеливании</value>
-  </data>
-  <data name="pnv_autostart_name" xml:space="preserve">
-    <value>ПНВ: автостарт при прицеливании</value>
-  </data>
-  <data name="pnv_disabling_desc" xml:space="preserve">
-    <value>Опция отключает эффект ночного видения во время прицеливания через прицел или использования бинокля. Прицелы и бинокль со встроенным ПНВ будут работать, как и раньше.</value>
-  </data>
-  <data name="pnv_disabling_name" xml:space="preserve">
-    <value>ПНВ: отключение при прицеливании</value>
   </data>
   <data name="rus" xml:space="preserve">
     <value>Русский</value>
