@@ -231,7 +231,7 @@
     <value>Launch (x86)</value>
   </data>
   <data name="StartGameButton64.Text" xml:space="preserve">
-    <value>Launch (x64)</value>
+    <value>Launch</value>
   </data>
   <data name="string_start.Text" xml:space="preserve">
     <value>Final launch string:</value>
