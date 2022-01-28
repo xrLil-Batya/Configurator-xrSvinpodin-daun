@@ -1123,7 +1123,7 @@
     <value>14</value>
   </data>
   <data name="StartGameButton64.Text" xml:space="preserve">
-    <value>Запустить (x64)</value>
+    <value>Запустить</value>
   </data>
   <data name="&gt;&gt;StartGameButton64.Name" xml:space="preserve">
     <value>StartGameButton64</value>
