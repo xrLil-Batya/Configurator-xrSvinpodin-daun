@@ -206,9 +206,6 @@
   <data name="lang_pic_en.ToolTip" xml:space="preserve">
     <value>Click here to change the language to English</value>
   </data>
-  <data name="lang_pic_fr.ToolTip" xml:space="preserve">
-    <value>Cliquez sur un drapeau pour changer de langue</value>
-  </data>
   <data name="lang_pic_ru.ToolTip" xml:space="preserve">
     <value>Щелкните по флагу для переключения языка</value>
   </data>

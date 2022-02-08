@@ -7,7 +7,7 @@ using System.Resources;
 // набора атрибутов. Измените значения этих атрибутов, чтобы изменить сведения,
 // связанные со сборкой.
 [assembly: AssemblyTitle("Configurator")]
-[assembly: AssemblyDescription("OGSR configurator")]
+[assembly: AssemblyDescription("OGSR:Gunslinger Addon configurator")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("OGSR")]
 [assembly: AssemblyProduct("Configurator")]

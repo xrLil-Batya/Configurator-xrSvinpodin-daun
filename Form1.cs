@@ -24,12 +24,6 @@ namespace Configurator
 
         [Description("eng")]
         EN,
-
-        [Description("fra")]
-        FR,
-
-        [Description("ger")]
-        GR,
     }
     public partial class Form1 : Form
     {
@@ -744,10 +738,7 @@ namespace Configurator
             var attributes = memInfo[0].GetCustomAttributes(typeof(DescriptionAttribute), false);
             var description = ((DescriptionAttribute)attributes[0]).Description;
             Utils.INI.WritePrivateProfileString("string_table", "language", description, Data.RootAppPath);
-            if ((_l == E_LANG.FR) || (_l == E_LANG.GR))
-                Utils.INI.WritePrivateProfileString("string_table", "font_prefix", "_west", Data.RootAppPath);
-            else
-                Utils.INI.WritePrivateProfileString("string_table", "font_prefix", ";_west", Data.RootAppPath);
+            Utils.INI.WritePrivateProfileString("string_table", "font_prefix", ";_west", Data.RootAppPath);
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
@@ -766,13 +757,6 @@ namespace Configurator
             this.lang_pic_en.Invalidate();
         }
 
-        private void pictureBox3_Click(object sender, EventArgs e)
-        {
-            if (lang != "fr-FR")
-                ResetLang("fr-FR");
-            ChangeLocale(E_LANG.FR);
-            this.lang_pic_fr.Invalidate();
-        }
         public void UpdateLangPics()
         {
             foreach (Control cont in this.Controls)
@@ -794,13 +778,6 @@ namespace Configurator
                             ((PictureBox)cont).Image = global::Configurator.Properties.Resources.en;
                         else
                             ((PictureBox)cont).Image = global::Configurator.Properties.Resources.en_disabled;
-                    }
-                    else if (_l == "fr")
-                    {
-                        if (lang == "fr-FR")
-                            ((PictureBox)cont).Image = global::Configurator.Properties.Resources.fr;
-                        else
-                            ((PictureBox)cont).Image = global::Configurator.Properties.Resources.fr_disabled;
                     }
                 }
             }
@@ -838,9 +815,7 @@ namespace Configurator
                 return Resources.ru_RU.ResourceManager;
             else if (lang == "en-US")
                 return Resources.en_US.ResourceManager;
-            else if (lang == "fr-FR")
-                return Resources.fr_FR.ResourceManager;
-            return null;
+             return null;
         }
 
         private void richTextBox1_TextChanged(object sender, EventArgs e)
@@ -866,5 +841,9 @@ namespace Configurator
             }
         }
 
+        private void pictureBox_day_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

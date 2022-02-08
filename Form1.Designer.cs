@@ -36,7 +36,6 @@
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.Nickname = new System.Windows.Forms.Label();
             this.name = new System.Windows.Forms.RichTextBox();
-            this.lang_pic_fr = new System.Windows.Forms.PictureBox();
             this.lang_pic_en = new System.Windows.Forms.PictureBox();
             this.lang_pic_ru = new System.Windows.Forms.PictureBox();
             this.button4 = new System.Windows.Forms.Button();
@@ -63,7 +62,6 @@
             this.text = new System.Windows.Forms.RichTextBox();
             this.RU = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
             this.pictureBox_day = new System.Windows.Forms.PictureBox();
             this.folderBrowserDialog1 = new System.Windows.Forms.FolderBrowserDialog();
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
@@ -76,7 +74,6 @@
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.propertyGrid1 = new System.Windows.Forms.PropertyGrid();
             this.tabpage = new System.Windows.Forms.TabControl();
-            ((System.ComponentModel.ISupportInitialize)(this.lang_pic_fr)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lang_pic_en)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lang_pic_ru)).BeginInit();
             this.tabPage4.SuspendLayout();
@@ -133,17 +130,8 @@
             this.name.Name = "name";
             this.toolTip1.SetToolTip(this.name, resources.GetString("name.ToolTip"));
             // 
-            // lang_pic_fr
-            // 
-            resources.ApplyResources(this.lang_pic_fr, "lang_pic_fr");
-            this.lang_pic_fr.Name = "lang_pic_fr";
-            this.lang_pic_fr.TabStop = false;
-            this.toolTip1.SetToolTip(this.lang_pic_fr, resources.GetString("lang_pic_fr.ToolTip"));
-            this.lang_pic_fr.Click += new System.EventHandler(this.pictureBox3_Click);
-            // 
             // lang_pic_en
             // 
-            this.lang_pic_en.Image = global::Configurator.Properties.Resources.en_disabled;
             resources.ApplyResources(this.lang_pic_en, "lang_pic_en");
             this.lang_pic_en.Name = "lang_pic_en";
             this.lang_pic_en.TabStop = false;
@@ -320,11 +308,6 @@
             resources.ApplyResources(this.label2, "label2");
             this.label2.Name = "label2";
             // 
-            // label3
-            // 
-            resources.ApplyResources(this.label3, "label3");
-            this.label3.Name = "label3";
-            // 
             // pictureBox_day
             // 
             resources.ApplyResources(this.pictureBox_day, "pictureBox_day");
@@ -332,6 +315,7 @@
             this.pictureBox_day.Image = global::Configurator.Properties.Resources.Title_logo;
             this.pictureBox_day.Name = "pictureBox_day";
             this.pictureBox_day.TabStop = false;
+            this.pictureBox_day.Click += new System.EventHandler(this.pictureBox_day_Click);
             // 
             // saveFileDialog1
             // 
@@ -415,10 +399,8 @@
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.StartGameButton64);
-            this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.RU);
-            this.Controls.Add(this.lang_pic_fr);
             this.Controls.Add(this.lang_pic_en);
             this.Controls.Add(this.lang_pic_ru);
             this.Controls.Add(this.pictureBox_day);
@@ -430,7 +412,6 @@
             this.Name = "Form1";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
             this.Load += new System.EventHandler(this.Form1_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.lang_pic_fr)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.lang_pic_en)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.lang_pic_ru)).EndInit();
             this.tabPage4.ResumeLayout(false);
@@ -482,10 +463,8 @@
         private System.Windows.Forms.Label Nickname;
         private System.Windows.Forms.PictureBox lang_pic_ru;
         private System.Windows.Forms.PictureBox lang_pic_en;
-        private System.Windows.Forms.PictureBox lang_pic_fr;
         private System.Windows.Forms.Label RU;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.SaveFileDialog saveFileDialog1;
         private System.Windows.Forms.Button StartGameButton64;
         private System.Windows.Forms.TabPage tabPage12;

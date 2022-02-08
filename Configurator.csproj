@@ -124,11 +124,6 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>en-US.resx</DependentUpon>
     </Compile>
-    <Compile Include="Resources\fr-FR.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>fr-FR.resx</DependentUpon>
-    </Compile>
     <Compile Include="Resources\ru-RU.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -136,10 +131,6 @@
     </Compile>
     <Compile Include="Utils.cs" />
     <EmbeddedResource Include="Form1.en-US.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Form1.fr-FR.resx">
       <DependentUpon>Form1.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
@@ -159,11 +150,6 @@
     <EmbeddedResource Include="Resources\en-US.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>en-US.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Resources\fr-FR.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>fr-FR.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Resources\ru-RU.resx">
@@ -186,10 +172,8 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\fr.png" />
     <None Include="Resources\ru.png" />
     <None Include="Resources\us.png" />
-    <None Include="Resources\fr_disabled.png" />
     <None Include="Resources\ru_disabled.png" />
     <None Include="Resources\us_disabled.png" />
   </ItemGroup>
@@ -218,7 +202,6 @@
 		xcopy "$(TargetPath).config" "..\..\!READY\" /y/i
 		xcopy "$(TargetDir)\ru-RU\$(TargetName).resources.dll" "..\..\!READY\localization\ru-RU\" /y/i
 		xcopy "$(TargetDir)\en-US\$(TargetName).resources.dll" "..\..\!READY\localization\en-US\" /y/i
-		xcopy "$(TargetDir)\fr-FR\$(TargetName).resources.dll" "..\..\!READY\localization\fr-FR\" /y/i
 	</PostBuildEvent>
   </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
