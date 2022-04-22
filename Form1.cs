@@ -79,8 +79,8 @@ namespace Configurator
                 // test end
 
                 // защита от удаления/отсутствия локализации
-                if (!File.Exists(Environment.CurrentDirectory + "\\gamedata.db_xpatch_locale") && File.Exists(Environment.CurrentDirectory + "\\localization\\" + lang + "\\gamedata.db_xpatch_locale"))
-                    File.Copy(Environment.CurrentDirectory + "\\localization\\" + lang + "\\gamedata.db_xpatch_locale", Environment.CurrentDirectory + "\\gamedata.db_xpatch_locale", true);
+                if (!File.Exists(Environment.CurrentDirectory + "\\gamedata.db_xlocale") && File.Exists(Environment.CurrentDirectory + "\\localization\\" + lang + "\\gamedata.db_xlocale"))
+                    File.Copy(Environment.CurrentDirectory + "\\localization\\" + lang + "\\gamedata.db_xlocale", Environment.CurrentDirectory + "\\gamedata.db_xlocale", true);
 
                 ApplyButton.Enabled = false;
                 if (Directory.Exists(Data.SavesDir))
@@ -719,13 +719,13 @@ namespace Configurator
         private void ChangeLocale(E_LANG _l)
         {
             // delete old locale
-            File.Delete(Environment.CurrentDirectory + "\\gamedata.db_xpatch_locale");
+            File.Delete(Environment.CurrentDirectory + "\\gamedata.db_xlocale");
 
             // copy new locale
             try
             {
                 //   if (_l != E_LANG.RU)
-                File.Copy(Environment.CurrentDirectory + "\\localization\\" + lang + "\\gamedata.db_xpatch_locale", Environment.CurrentDirectory + "\\gamedata.db_xpatch_locale");
+                File.Copy(Environment.CurrentDirectory + "\\localization\\" + lang + "\\gamedata.db_xlocale", Environment.CurrentDirectory + "\\gamedata.db_xlocale");
             }
             catch (Exception e)
             {
