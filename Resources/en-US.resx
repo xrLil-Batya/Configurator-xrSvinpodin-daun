@@ -429,21 +429,6 @@
   <data name="wait_for_download" xml:space="preserve">
     <value>Wait for active download to be completed</value>
   </data>
-  <data name="weather_bright" xml:space="preserve">
-    <value>Bright</value>
-  </data>
-  <data name="weather_default" xml:space="preserve">
-    <value>Standard</value>
-  </data>
-  <data name="weather_rainy" xml:space="preserve">
-    <value>Rainy</value>
-  </data>
-  <data name="weather_type_desc" xml:space="preserve">
-    <value>This option changes the in-game weather presets.</value>
-  </data>
-  <data name="weather_type_name" xml:space="preserve">
-    <value>Weather</value>
-  </data>
   <data name="world_settings" xml:space="preserve">
     <value>World</value>
   </data>

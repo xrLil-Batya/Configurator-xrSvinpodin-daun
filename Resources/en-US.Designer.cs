@@ -997,51 +997,6 @@ namespace Configurator.Resources {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Bright.
-        /// </summary>
-        public static string weather_bright {
-            get {
-                return ResourceManager.GetString("weather_bright", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Ищет локализованную строку, похожую на Standard.
-        /// </summary>
-        public static string weather_default {
-            get {
-                return ResourceManager.GetString("weather_default", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Ищет локализованную строку, похожую на Rainy.
-        /// </summary>
-        public static string weather_rainy {
-            get {
-                return ResourceManager.GetString("weather_rainy", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Ищет локализованную строку, похожую на This option changes the in-game weather presets..
-        /// </summary>
-        public static string weather_type_desc {
-            get {
-                return ResourceManager.GetString("weather_type_desc", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Ищет локализованную строку, похожую на Weather.
-        /// </summary>
-        public static string weather_type_name {
-            get {
-                return ResourceManager.GetString("weather_type_name", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Ищет локализованную строку, похожую на World.
         /// </summary>
         public static string world_settings {

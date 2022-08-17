@@ -36,18 +36,6 @@ namespace Configurator
 		All,
 	}
 
-    enum E_WEATHER
-    {
-        [LocalizedDescription("weather_default")]
-        Default,
-
-        [LocalizedDescription("weather_bright")]
-        Bright,
-
-        [LocalizedDescription("weather_rainy")]
-        Rainy,
-    }
-
     class OgseConfig : GlobalizedObject
 	{
 		#region Actor settings
@@ -283,11 +271,6 @@ namespace Configurator
 
 		private int _verojatnost_tajnik = 35;
 
-        [GlobalizedProperty("weather_type_name", Description = "weather_type_desc", Category = "world_settings")]
-        [TypeConverter(typeof(EnumTypeConverter))]
-        [DefaultValue(E_WEATHER.Default)]
-        public E_WEATHER weather_type { get; set; }
-
         [GlobalizedProperty("stashes_name", Description = "stashes_desc", Category = "stashes_settings")]
 		[DefaultValue(35)]
 		[TypeConverter(typeof(MyIntConverter))]
@@ -364,21 +347,7 @@ namespace Configurator
 				cfg.medlen_lek = SetCheckboxValueFromIni("options", "slow_drugs");
  				#endregion
 
-				int value = GetIntValueFromIni("options", "weather_type");
-                switch (value)
-                {
-                    case 1:
-                        cfg.weather_type = E_WEATHER.Bright;
-                        break;
-                    case 2:
-                        cfg.weather_type = E_WEATHER.Rainy;
-                        break;
-                    default:
-                        cfg.weather_type = E_WEATHER.Default;
-                        break;
-                }
-
-				value = GetIntValueFromIni("options", "oh_shit_im_hit");
+				int value = GetIntValueFromIni("options", "oh_shit_im_hit");
 				switch (value)
 				{
 					case 1:
@@ -445,15 +414,6 @@ namespace Configurator
 			WriteCheckboxValueToIni(cfg.medlen_lek, "options", "slow_drugs");
 
             string value = "0";
-            if (cfg.weather_type == E_WEATHER.Bright)
-                value = "1";
-            else if (cfg.weather_type == E_WEATHER.Rainy)
-                value = "2";
-            else
-                value = "0";
-            Utils.INI.WritePrivateProfileString("options", "weather_type", value, Data.RootAppPath);
-		
-			value = "0";
 			if (cfg.popadanie_po_ger == E_ACTOR_HIT.All)
 				value = "2";
 			else if (cfg.popadanie_po_ger == E_ACTOR_HIT.OnlyCameraShake)
